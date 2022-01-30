@@ -12,6 +12,7 @@ const Product = () => {
 
         try {
             const response = await axios.get("https://fakestoreapi.com/products")
+            console.log(itemList)
 
             setItemList(response.data)
 
@@ -31,7 +32,7 @@ const Product = () => {
                 itemList.map((items) => {
                     return (
                         <div className="card" style={{ width: "18rem" }} key={items?.title} >
-                            <img src="..." className="card-img-top" alt="..." />
+                            <img src={items.image} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>
                                 <p className="card-text">${items.price} </p>
