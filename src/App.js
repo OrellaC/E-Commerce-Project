@@ -16,22 +16,31 @@ import "./App.css"
 
 
 
-
 const App = () => {
+  const [cart, setCart] = useState([])
+  const [user, setUser] = useState('')
 
+  const addToCart = (items) => {
+    console.log(items, 'has been added to your cart')
+    setCart([...cart, items])
+  }
 
   return (
 
     <div>
-      < Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="cart" element={<Cart />} />
-        <Route path="coupon" element={<Coupon />} />
-        <Route path="product" element={<Product />} />
+      <UserContext.Provider value={user}>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="cart" element={<Cart cart={cart} />} />
+          <Route path="coupon" element={<Coupon />} />
+          <Route path="product" element={<Product />} />
 
-      </Routes>
+        </Routes>
+
+      </UserContext.Provider>
+
     </div>
   );
 }

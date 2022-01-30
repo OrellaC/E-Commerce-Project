@@ -8,6 +8,7 @@ import "./styles.css"
 
 const Product = () => {
     const [itemList, setItemList] = useState([])
+    // const [cart, setCart] = useState([])
     const fetchProduct = async () => {
 
         try {
@@ -20,6 +21,11 @@ const Product = () => {
             console.log(error)
         }
     }
+
+    // const addToCart = (items) => {
+    //     console.log(items, 'has been added to your cart')
+    //     setCart([...cart, items])
+    // }
 
     useEffect(() => {
         fetchProduct()
@@ -36,14 +42,15 @@ const Product = () => {
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>
                                 <p className="card-text">${items.price} </p>
-                                <a href="#" className="btn btn-primary">Add to Cart</a>
-                             
+                                <button className="btn btn-primary" onClick={()=> addToCart(items)}>Add to Cart</button>
+                                
+
                             </div>
                         </div>
                     )
                 })
             }
-    </div>
+        </div>
 
     );
 }
