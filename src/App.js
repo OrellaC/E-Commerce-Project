@@ -16,17 +16,29 @@ import "./App.css"
 
 
 const App = () => {
+
+  useEffect(() => {
+    try {
+
+    } catch (error) {
+      console.log(error)
+    }
+    })
+
+
+
+
   return (
 
     <div>
-      < Nav/>
+      < Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="cart" element={<Cart />} />
         <Route path="coupon" element={<Coupon />} />
         <Route path="product" element={<Product />} />
-      
+
       </Routes>
     </div>
   );
