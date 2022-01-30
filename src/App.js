@@ -16,26 +16,8 @@ import "./App.css"
 
 
 
+
 const App = () => {
-
-const [itemList, setItemList] = useState([])
-
-  useEffect(() => {
-    fetchProduct()
-    // Dependency array: if empty, it will call useEffect once only when DOM Component loads
-  }, [])
-
-    const fetchProduct = async () => {
-    try {
-      const response = await axios.get("https://fakestoreapi.com/products")
-
-      setItemList(response.data)
-
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
 
 
   return (
@@ -47,7 +29,7 @@ const [itemList, setItemList] = useState([])
         <Route path="about" element={<About />} />
         <Route path="cart" element={<Cart />} />
         <Route path="coupon" element={<Coupon />} />
-        <Route path="product" element={<Product itemList={itemList} />} />
+        <Route path="product" element={<Product />} />
 
       </Routes>
     </div>
