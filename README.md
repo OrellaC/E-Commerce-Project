@@ -18,3 +18,13 @@
  Use a CSS framework. </li>
  <li>README.md:  clearly documents the purpose of the project as a problem statement, clearly documents the target end-user for this program, and has embedded link (not URL) to publicly deployed app. </li>
 </ul>
+
+
+<h3><u>Technologies Used:</u></h3> Javascript, React Javascript, CSS3, and Bootstrap.
+
+<h3><u>Approach Taken:</u></h3>
+
+<h3><u> Unsolved Issues:</u></h3>
+
+
+<h3><u> Future Plans for Project:</u></h3>
