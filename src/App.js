@@ -17,8 +17,48 @@ import Couponcode from './pages/Coupon/couponCode';
 
 
 const App = () => {
+  const [itemList, setItemList] = useState([])
   const [email, setEmail] = useState('')
-  const[cart, setCart] = useState([])
+  const [cart, setCart] = useState({})
+
+
+  useEffect(() => {
+    fetchProduct()
+    fetchCart()
+    // Dependency array: if empty, it will call useEffect once only when DOM Component loads
+  }, [])
+
+  const fetchProduct = async () => {
+    try {
+      const response = await axios.get("https://fakestoreapi.com/products")
+      console.log(itemList)
+
+      setItemList(response.data)
+
+    } catch (error) {
+      console.log(error)
+      console.log(itemList)
+    }
+  }
+  const fetchCart = async () => {
+    try {
+      const response = await axios.get("https://fakestoreapi.com/carts")
+      console.log(itemList)
+
+      setItemList(response.data)
+
+    } catch (error) {
+      console.log(error)
+      console.log(itemList)
+    }
+  }
+
+
+  const addToCart = (product) => {
+    console.log("This item has been added to your cart", product)
+
+    setCart([...cart, product])
+  }
 
   return (
 
@@ -31,7 +71,11 @@ const App = () => {
           <Route path="cart" element={<Cart cart={cart} />} />
           <Route path="coupon" element={<Coupon setEmail={setEmail} />} />
           <Route path="coupon/code" element={<Couponcode />} />
-          <Route path="product" element={<Product />} />
+          <Route path="product" element={<Product
+            itemList={itemList}
+            addToCart={addToCart}
+          />}
+          />
 
         </Routes>
 

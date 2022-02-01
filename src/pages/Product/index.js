@@ -7,32 +7,7 @@ import App from "../../App"
 import "./styles.css"
 
 
-const Product = () => {
-    const [itemList, setItemList] = useState([])
-    const [cart, setCart] = useState([])
-    
-    useEffect(() => {
-        fetchProduct()
-        // Dependency array: if empty, it will call useEffect once only when DOM Component loads
-    }, [])
-    
-    const fetchProduct = async () => {
-        try {
-            const response = await axios.get("https://fakestoreapi.com/products")
-            console.log(itemList)
-
-            setItemList(response.data)
-
-        } catch (error) {
-            console.log(error)
-            console.log(itemList)
-        }
-    }
-    const addToCart = (product) =>{
-        console.log("This item has been added to your cart", product)
-
-        setCart([...cart, product])
-    }
+const Product = ({itemList, items, addToCart}) => {
 
 
     return (
