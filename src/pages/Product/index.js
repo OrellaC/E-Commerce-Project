@@ -8,8 +8,6 @@ import "./styles.css"
 
 
 const Product = ({itemList, items, addToCart}) => {
-
-
     return (
         <div className="product-container">
 
@@ -21,7 +19,7 @@ const Product = ({itemList, items, addToCart}) => {
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>
                                 <p className="card-text">${items.price} </p>
-                                <button className="btn btn-primary" onClick={()=>addToCart(items)}> Add to Cart</button>
+                                <button className="btn btn-primary" onClick={()=>addToCart(items.title)}> Add to Cart</button>
                                 
                             </div>
                         </div>

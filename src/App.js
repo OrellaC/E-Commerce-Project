@@ -43,19 +43,19 @@ const App = () => {
   const fetchCart = async () => {
     try {
       const response = await axios.get("https://fakestoreapi.com/carts")
-      console.log(itemList)
+      console.log(cart)
 
-      setItemList(response.data)
+      setCart(response.data)
 
     } catch (error) {
       console.log(error)
-      console.log(itemList)
+      console.log(cart)
     }
   }
 
 
   const addToCart = (product) => {
-    console.log("This item has been added to your cart", product)
+    console.log("This item has been added to your cart: ", product)
 
     setCart([...cart, product])
   }
