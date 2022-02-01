@@ -18,7 +18,7 @@ import "./App.css"
 
 const App = () => {
   const [cart, setCart] = useState([])
-  const [user, setUser] = useState('')
+  const [email, setEmail] = useState('')
 
 
 
@@ -30,13 +30,13 @@ const App = () => {
   return (
 
     <div>
-      <UserContext.Provider value='Orella'>
+      <UserContext.Provider value={email}>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart cart={cart} />} />
-          <Route path="coupon" element={<Coupon />} />
+          <Route path="coupon" element={<Coupon setEmail={setEmail} />} />
           <Route path="product" element={<Product />} />
 
         </Routes>
