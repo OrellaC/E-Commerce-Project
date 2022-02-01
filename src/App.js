@@ -19,12 +19,12 @@ import Couponcode from './pages/Coupon/couponCode';
 const App = () => {
   const [itemList, setItemList] = useState([])
   const [email, setEmail] = useState('')
-  const [cart, setCart] = useState({})
+  const [cart, setCart] = useState([])
 
 
   useEffect(() => {
     fetchProduct()
-    fetchCart()
+    // fetchCart()
     // Dependency array: if empty, it will call useEffect once only when DOM Component loads
   }, [])
 
@@ -38,18 +38,6 @@ const App = () => {
     } catch (error) {
       console.log(error)
       console.log(itemList)
-    }
-  }
-  const fetchCart = async () => {
-    try {
-      const response = await axios.get("https://fakestoreapi.com/carts")
-      console.log(cart)
-
-      setCart(response.data)
-
-    } catch (error) {
-      console.log(error)
-      console.log(cart)
     }
   }
 
@@ -68,7 +56,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="cart" element={<Cart cart={cart} />} />
+          <Route path="cart" element={<Cart cart={cart&&cart} />} />
           <Route path="coupon" element={<Coupon setEmail={setEmail} />} />
           <Route path="coupon/code" element={<Couponcode />} />
           <Route path="product" element={<Product

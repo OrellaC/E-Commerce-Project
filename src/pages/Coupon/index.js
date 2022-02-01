@@ -25,7 +25,7 @@ const Coupon = ({ setEmail }) => {
       <div className="form-body">
             In order to receive 25% off your first order, you must subscribe to our mailing list by providing your full name and a valid email address.
 
-            <form className="row g-3 needs-validation border p-2 m-1" noValidate onSubmit={handleSubmit}>
+            <form className="row g-3 needs-validation border p-2 m-1" noValidate onSubmit={handleSubmit} >
             <div className="col-md-4">
               <label htmlFor="validationCustom01" className="form-label">First name</label>
               <input 
@@ -53,7 +53,7 @@ const Coupon = ({ setEmail }) => {
             <div className="col-md-4">
               <label htmlFor="validationCustomUsername" className="form-label">Email </label>
               <div className="input-group has-validation">
-                <input type="text" 
+                <input type="email" 
                 className="form-control" 
                 id="validationCustomUsername" 
                 aria-describedby="inputGroupPrepend" 
