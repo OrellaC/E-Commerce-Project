@@ -1,10 +1,11 @@
-import UserContext from "../../contexts/UserContext"
-import { useContext, useState } from 'react'
+import  {useNavigate} from 'react-router-dom'
+import { useState } from 'react'
 import "./styles.css"
 
-const Coupon = (props) => {
+const Coupon = ({ setEmail }) => {
 
-  const[emailadd, setEmailadd] = useState('')
+  const[emailAdd, setEmailadd] = useState('')
+  const navigate = useNavigate()
 
   //updates email once user starts typing
   const handleChange = e =>{
@@ -13,10 +14,12 @@ const Coupon = (props) => {
   
   const handleSubmit = e => {
     e.preventDefault()
+    setEmail(emailAdd)
+
+    //{useNavigate} redirects client to a different page
+    navigate('/coupon/code')
   }
   
-  console.log('props', props)
-
 
     return (
       <div className="form-body">
@@ -29,8 +32,6 @@ const Coupon = (props) => {
               type="text" 
               className="form-control" 
               id="validationCustom01" 
-              value="John" 
-              onChange={handleChange}
               required />
 
               <div className="valid-feedback">
@@ -43,8 +44,6 @@ const Coupon = (props) => {
               <input type="text" 
               className="form-control"
                id="validationCustom02" 
-               value="Doe"
-               onChange={handleChange} 
                required />
               <div className="valid-feedback">
                 Looks good!
@@ -58,7 +57,7 @@ const Coupon = (props) => {
                 className="form-control" 
                 id="validationCustomUsername" 
                 aria-describedby="inputGroupPrepend" 
-                value = {emailadd}
+                value = {emailAdd}
                 onChange={handleChange}
                 required />
                 <div className="invalid-feedback">

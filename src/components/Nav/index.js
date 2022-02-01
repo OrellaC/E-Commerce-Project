@@ -4,8 +4,10 @@ import UserContext from "../../contexts/UserContext"
 import { useContext } from 'react'
 
 const Nav = () => {
-  const user = useContext(UserContext)
-  console.log(user)
+  const emailAdd = useContext(UserContext)
+  console.log('nav', emailAdd)
+
+  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">

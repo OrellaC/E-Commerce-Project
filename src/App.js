@@ -13,14 +13,12 @@ import Home from "./pages/Home"
 import UserContext from "./contexts/UserContext"
 //CSS
 import "./App.css"
-
+import Couponcode from './pages/Coupon/couponCode';
 
 
 const App = () => {
   const [cart, setCart] = useState([])
   const [email, setEmail] = useState('')
-
-
 
   const addToCart = (items) => {
     console.log(items, 'has been added to your cart')
@@ -37,6 +35,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart cart={cart} />} />
           <Route path="coupon" element={<Coupon setEmail={setEmail} />} />
+          <Route path="coupon/code" element={<Couponcode />} />
           <Route path="product" element={<Product />} />
 
         </Routes>
