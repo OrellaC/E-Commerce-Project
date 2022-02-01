@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import App from "../../App"
 
 // Css
 import "./styles.css"
@@ -9,8 +10,13 @@ import "./styles.css"
 const Product = () => {
     const [itemList, setItemList] = useState([])
     const [cart, setCart] = useState([])
+    
+    useEffect(() => {
+        fetchProduct()
+        // Dependency array: if empty, it will call useEffect once only when DOM Component loads
+    }, [])
+    
     const fetchProduct = async () => {
-
         try {
             const response = await axios.get("https://fakestoreapi.com/products")
             console.log(itemList)
@@ -22,16 +28,13 @@ const Product = () => {
             console.log(itemList)
         }
     }
+    const addToCart = (product) =>{
+        console.log("This item has been added to your cart", product)
 
-    // const addToCart = (items) => {
-    //     console.log(items, 'has been added to your cart')
-    //     setCart([...cart, items])
-    // }
+        setCart([...cart, product])
+    }
 
-    useEffect(() => {
-        fetchProduct()
-        // Dependency array: if empty, it will call useEffect once only when DOM Component loads
-    }, [])
+
     return (
         <div className="product-container">
 
@@ -43,13 +46,11 @@ const Product = () => {
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>
                                 <p className="card-text">${items.price} </p>
-                                <button className="btn btn-primary">Add to Cart</button>
-
-                                 
+                                <button className="btn btn-primary" onClick={()=>addToCart(items)}> Add to Cart</button>
                                 
-
                             </div>
                         </div>
+                
                     )
                 })
             }

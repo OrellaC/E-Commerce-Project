@@ -17,13 +17,8 @@ import Couponcode from './pages/Coupon/couponCode';
 
 
 const App = () => {
-  const [cart, setCart] = useState([])
   const [email, setEmail] = useState('')
-
-  const addToCart = (items) => {
-    console.log(items, 'has been added to your cart')
-    setCart([...cart, items])
-  }
+  const[cart, setCart] = useState([])
 
   return (
 
