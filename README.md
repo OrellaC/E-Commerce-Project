@@ -1,6 +1,6 @@
 <h1>Description</h1>
 
-<h4>Create a website that meets the following requirements: </h4>
+<h3>Create a website that meets the following requirements: </h3>
 
 <ul>
 <li>The project must be approved by Teo and Manara at the start of the project week</li>
@@ -20,7 +20,7 @@
 </ul>
 
 
-<h3><u>Technologies Used:</u></h3> Javascript, React Javascript, CSS3, and Bootstrap.
+<h3><u>Technologies Used:</u></h3> React Javascript, JSX, CSS3, and Bootstrap.
 
 <h3><u>Approach Taken:</u></h3>
 

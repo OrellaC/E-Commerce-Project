@@ -1,4 +1,5 @@
 //import createContext
+//Context is built into React
 
 import React, { createContext } from 'react'
 

@@ -20,6 +20,8 @@ const App = () => {
   const [cart, setCart] = useState([])
   const [user, setUser] = useState('')
 
+
+
   const addToCart = (items) => {
     console.log(items, 'has been added to your cart')
     setCart([...cart, items])
@@ -28,7 +30,7 @@ const App = () => {
   return (
 
     <div>
-      <UserContext.Provider value={user}>
+      <UserContext.Provider value='Orella'>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
