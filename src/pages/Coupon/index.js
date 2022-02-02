@@ -7,7 +7,8 @@ const Coupon = () => {
   const [userInput, setUserInput] = useState('')
   const [data, setData] = useState({})
 
-  // const navigate = useNavigate()
+
+  const navigate = useNavigate()
 
 
 
@@ -38,13 +39,19 @@ const Coupon = () => {
     console.log(userInput)
     fetchEmail()
 
-    // navigate('/coupon/code')
+    navigate('/coupon/code')
   }
+
+  const show = false
+  
 
   return (
 
     <div className="form-body">
       {console.log(data)}
+
+      <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing your full name and a valid email address.</h1>
+
 
       <form onSubmit={(e) => {
         return handleSubmit(e)
@@ -56,13 +63,20 @@ const Coupon = () => {
           name='userInput'
           onChange={handleChange}
           value={data?.userInput}
+          required
         />
         <input type='submit' value='Submit' />
       </form>
 
-      <h1>{data?.email_address}</h1>
-      <h1>{String (data?.valid_syntax)}</h1>
+      <div className="email-box">
+        <h4>Email Address:{data?.email_address}</h4>
+        <h4>Is this email syntax valid? {String(data?.valid_syntax)}</h4>
+        <h4>Is this a spam email? {String(data?.spam)}</h4>
+      </div>
 
+      <button type="submit" className='coupon-bttn' onClick={() => ({show: ! show})}>Unlock Coupon Code</button>
+
+      <h4 style={{display: (show ? "block" :"none")}}>{useNavigate}</h4>
 
 
     </div>
