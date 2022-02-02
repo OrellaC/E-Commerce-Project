@@ -18,7 +18,7 @@ import Couponcode from './pages/Coupon/couponCode';
 
 const App = () => {
   const [itemList, setItemList] = useState([])
-  const [email, setEmail] = useState('')
+  const [userInput, setUserInput] = useState('')
   const [cart, setCart] = useState([])
 
 
@@ -51,13 +51,13 @@ const App = () => {
   return (
 
     <div>
-      <UserContext.Provider value={email}>
+      <UserContext.Provider value={userInput}>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="cart" element={<Cart cart={cart&&cart} />} />
-          <Route path="coupon" element={<Coupon setEmail={setEmail} />} />
+          <Route path="coupon" element={<Coupon setUserInput={setUserInput} />} />
           <Route path="coupon/code" element={<Couponcode />} />
           <Route path="product" element={<Product
             itemList={itemList}
