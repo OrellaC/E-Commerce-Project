@@ -1,9 +1,17 @@
 import React from 'react';
 
+const removeFromCart = () =>{
+    
+}
+
+const quantity = () =>{
+
+}
 const Cart = ({cart}) => {
     console.log(cart)
     return (
         <div className="product-container">
+            <h1>My Cart</h1>
 
         {
             cart && cart.map((items) => {
@@ -14,7 +22,7 @@ const Cart = ({cart}) => {
                         <div className="card-body">
                             <h5 className="card-title"> {items.title} </h5>
                             <p className="card-text">${items.price} </p>
-                            <button className="btn btn-primary"> Remove </button>
+                            <button className="btn btn-primary" onClick={()=>removeFromCart()}> Remove </button>
                         </div>
                     </div>
             
