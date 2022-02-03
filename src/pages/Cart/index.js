@@ -1,27 +1,9 @@
 import React from 'react';
-
-// const removeFromCart = () => {
-
-// }
-
-// const quantity = () => {
-//     // clicks: 0,
-//     //     show: true
-// };
-
-// IncrementItem = () => {
-//     quantity.setState({ clicks: quantity.state.clicks + 1 });
-// }
-// DecreaseItem = () => {
-//     quantity.setState({ clicks: quantity.state.clicks - 1 });
-// }
-// ToggleClick = () => {
-//     quantity.setState({ show: !quantity.state.show });
-// }
+import Product from '../Product';
 
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, removeFromCart }) => {
     console.log(cart)
     return (
         <div className="product-container">
@@ -36,7 +18,7 @@ const Cart = ({ cart }) => {
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>
                                 <p className="card-text">${items.price} </p>
-                                <button className="btn btn-primary"> Remove </button>
+                                <button className="btn btn-primary" onClick={()=>removeFromCart(items)}> Remove </button>
                                
                                
                                

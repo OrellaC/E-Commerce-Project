@@ -41,13 +41,19 @@ const App = () => {
     }
   }
 
-
+  //Create a function that allows users to add items to cart
   const addToCart = (product) => {
     console.log("This item has been added to your cart: ", product)
 
     setCart([...cart, product])
   }
 
+  //Create a function that allows users to also remove items from cart
+  const removeFromCart = (product) => {
+    const itemsArray = cart.filter((itemList) => itemList !== product)
+    setCart(itemsArray)
+    console.log('This item has been removed from your cart', itemsArray)
+  }
   return (
 
     <div>
@@ -56,7 +62,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="cart" element={<Cart cart={cart&&cart} />} />
+          <Route path="cart" element={<Cart
+            cart={cart && cart}
+            removeFromCart={removeFromCart}
+          />}
+          />
           <Route path="coupon" element={<Coupon setUserInput={setUserInput} />} />
           <Route path="coupon/code" element={<Couponcode />} />
           <Route path="product" element={<Product
