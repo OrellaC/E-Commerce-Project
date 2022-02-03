@@ -2,3 +2,8 @@
     margin: 4em;
     padding: 4em
 }
+
+.header{
+    padding: 5em;
+    border: solid black 2px;
+}

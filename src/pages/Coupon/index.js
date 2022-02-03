@@ -50,8 +50,10 @@ const Coupon = () => {
     <div className="form-body">
       {console.log(data)}
 
-      <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing your full name and a valid email address.</h1>
 
+      <div className='header'>
+      <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address.</h1>
+      </div>
 
       <form onSubmit={(e) => {
         return handleSubmit(e)
