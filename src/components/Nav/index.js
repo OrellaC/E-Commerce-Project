@@ -34,6 +34,9 @@ const Nav = () => {
               <Link className="nav-link" to="cart">Cart</Link>
             </li>
 
+            <li className="nav-item">
+              <Link className="nav-link" to="geo">Geo Location Services</Link>
+            </li>
           </ul>
 
           <form className="d-flex">

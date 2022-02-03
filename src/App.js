@@ -9,6 +9,7 @@ import Cart from "./pages/Cart"
 import Coupon from "./pages/Coupon"
 import Product from "./pages/Product"
 import Home from "./pages/Home"
+import Geolocation from "./pages/Geolocation"
 //Contexts
 import UserContext from "./contexts/UserContext"
 //CSS
@@ -74,6 +75,7 @@ const App = () => {
             addToCart={addToCart}
           />}
           />
+          <Route path="geo" element={<Geolocation />}/>
 
         </Routes>
 
