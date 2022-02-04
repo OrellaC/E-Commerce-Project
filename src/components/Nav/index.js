@@ -12,6 +12,7 @@ const Nav = () => {
   
   return (
     <div className='nav-container'>
+         <img src ={updatedLogo} className='nav-banner' />
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
    
       <div className="container-fluid">
@@ -45,7 +46,7 @@ const Nav = () => {
         </div>
       </div>
    </nav>
-   <img src ={updatedLogo} className='nav-banner' />
+
     </div>
   );
 }
