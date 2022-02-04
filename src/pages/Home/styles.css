@@ -1,11 +1,13 @@
-
+*{
+    justify-content: center;
+}
 .container{
     color: black;
     background-color: gray;
     width: 150em;
     height: 20em;
 }
-.banner {
+.logo {
     max-width: 25%;
     max-height: 25%;
     padding: 4em;
@@ -23,4 +25,18 @@
 .child-box{
     display: inline-flex;
     gap: 2rem;
+}
+
+.parent{
+    width: 150em;
+    height: 20em;
+    padding: 4em;
+    justify-content: center;
+}
+
+.banner{
+    width: 50%;
+    height: 50%;
+   margin: 0;
+   padding: 0;
 }

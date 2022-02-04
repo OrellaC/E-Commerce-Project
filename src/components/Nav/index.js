@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 import UserContext from "../../contexts/UserContext"
 import { useContext } from 'react'
+import banner from "../../pages/Home/Images/banner.png"
 import "./styles.css"
 
 const Nav = () => {
@@ -10,7 +11,9 @@ const Nav = () => {
 
   
   return (
+    <div className='nav-container'>
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
+   
       <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -39,9 +42,14 @@ const Nav = () => {
               <Link className="nav-link" to="geo">Geo Location Services</Link>
             </li>
           </ul>
+
+          
         </div>
       </div>
+      
     </nav>
+    <img src ={banner} className='banner' />
+    </div>
   );
 }
 
