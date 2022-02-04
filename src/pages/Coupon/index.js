@@ -44,7 +44,13 @@ const Coupon = () => {
   }
 
   const show = false
-  
+const errorMssg =
+"please enter a valid message"
+  // const checkEmail = (data) => {
+  //   if (data?.webmail){
+  //     return <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button> ;
+  //   }
+  // }
 
   return (
 
@@ -53,7 +59,7 @@ const Coupon = () => {
 
 
       <div className='header'>
-      <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address.</h1>
+        <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address.</h1>
       </div>
 
       <form onSubmit={(e) => {
@@ -75,12 +81,19 @@ const Coupon = () => {
         <h4>Email Address:{data?.email_address}</h4>
         <h4>Is this email syntax valid? {String(data?.valid_syntax)}</h4>
         <h4>Is this a spam email? {String(data?.spam)}</h4>
+        <h4> Is this a webmail? {String(data?.webmail)}</h4>
       </div>
 
-       <button type="submit" className='coupon-bttn' onClick={() => ({show: ! show})}>Unlock Coupon Code</button>
 
-      <h4 style={{display: (show ? "block" :"none")}}>{useNavigate}</h4> 
+      <div className='coupon-holder'>
 
+
+       {data?.webmail ? <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button> : errorMssg} 
+
+       
+
+        {/* <h4 style={{ display: (show ? "block" : "none") }}>{useNavigate}</h4> */}
+      </div>
 
     </div>
 
