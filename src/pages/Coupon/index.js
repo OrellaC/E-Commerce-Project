@@ -46,6 +46,8 @@ const Coupon = () => {
   const show = false
 const errorMssg =
 "please enter a valid message"
+
+
   // const checkEmail = (data) => {
   //   if (data?.webmail){
   //     return <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button> ;

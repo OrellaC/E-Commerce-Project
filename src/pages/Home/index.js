@@ -1,6 +1,18 @@
 import React from 'react';
+
+//Images
 import OrTech from "./Images/OrTech.png"
 import banner from "./Images/banner.png"
+import blacktech from "./Images/blacktech.jpg"
+import black2tech from "./Images/black2tech.jpeg"
+import blckwmn from "./Images/blckwmn.jpeg"
+import woman from "./Images/woman.jpeg"
+import woman2 from "./Images/woman2.jpeg"
+import woman3 from "./Images/woman3.jpeg"
+import updatedLogo from "./Images/updatedLogo.png"
+import OrTech2 from "./Images/OrTech2.png"
+
+//CSS
 import "./styles.css"
 
 const Home = () => {
@@ -15,22 +27,20 @@ const Home = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="10000">
-                            <img src={OrTech} className="logo d-block w-100 mx-auto .img-thumbnai" alt="..." />
+                            <img src={woman} className=" d-block w-100 mx-auto .img-thumbnail" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div className="carousel-item" data-bs-interval="2000">
-                            <img src="..." className="d-block w-100" alt="..." />
+                            <img src={blckwmn} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                
                             </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..." />
+                        <div className="carousel-item caro-imgs">
+                            <img src={OrTech2} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+        
                             </div>
                         </div>
                     </div>
@@ -44,11 +54,11 @@ const Home = () => {
                     </button>
                 </div>
 
-
+{/* Bootstrap Card boxes */}
                 <div className='image-box d-flex flex-row'>
                     <div className='child-box'>
                         <div className="card ">
-                            <img className="card-img-top" src="..." alt="Card image cap" />
+                            <img className="card-img-top" src={black2tech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -57,7 +67,7 @@ const Home = () => {
                         </div>
 
                         <div className="card ">
-                            <img className="card-img-top" src="..." alt="Card image cap" />
+                            <img className="card-img-top" src={blacktech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -66,7 +76,7 @@ const Home = () => {
                         </div>
 
                         <div className="card ">
-                            <img className="card-img-top" src="..." alt="Card image cap" />
+                            <img className="card-img-top" src={woman2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -75,7 +85,7 @@ const Home = () => {
                         </div>
 
                         <div className="card ">
-                            <img className="card-img-top" src="..." alt="Card image cap" />
+                            <img className="card-img-top" src={woman3} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

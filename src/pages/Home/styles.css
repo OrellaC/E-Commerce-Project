@@ -3,14 +3,14 @@
 }
 .container{
     color: black;
-    background-color: gray;
+    /* background-color: gray; */
     width: 150em;
     height: 20em;
 }
-.logo {
-    max-width: 25%;
-    max-height: 25%;
+.caro-imgs {
+    
     padding: 4em;
+    justify-content: center;
    }
 
 .image-box{

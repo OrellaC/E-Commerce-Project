@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import UserContext from "../../contexts/UserContext"
 import { useContext } from 'react'
-import banner from "../../pages/Home/Images/banner.png"
+import updatedLogo from "../../pages/Home/Images/updatedLogo.png"
 import "./styles.css"
 
 const Nav = () => {
@@ -42,13 +42,10 @@ const Nav = () => {
               <Link className="nav-link" to="geo">Geo Location Services</Link>
             </li>
           </ul>
-
-          
         </div>
       </div>
-      
-    </nav>
-    <img src ={banner} className='banner' />
+   </nav>
+   <img src ={updatedLogo} className='nav-banner' />
     </div>
   );
 }
