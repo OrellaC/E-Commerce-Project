@@ -15,7 +15,7 @@ const Product = ({itemList, items, addToCart}) => {
             {
                 itemList.map((items) => {
                     return (
-                        <div className="card" style={{ width: "18rem" }} key={items?.title} >
+                        <div className="card" style={{ width: "30rem" }} key={items?.title} >
                             <img src={items.image} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title"> {items.title} </h5>

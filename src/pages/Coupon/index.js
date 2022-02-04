@@ -6,9 +6,10 @@ import "./styles.css"
 const Coupon = () => {
   const [userInput, setUserInput] = useState('')
   const [data, setData] = useState({})
+  const [total, setTotal] = useState()
 
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
 
 
@@ -39,7 +40,7 @@ const Coupon = () => {
     console.log(userInput)
     fetchEmail()
 
-    navigate('/coupon/code')
+    // navigate('/coupon/code')
   }
 
   const show = false
@@ -60,7 +61,7 @@ const Coupon = () => {
       }}>
         <label htmlFor='userInput'>Email Address: </label>
         <input
-          type='email'
+          type='text'
           id='userInput'
           name='userInput'
           onChange={handleChange}
@@ -76,9 +77,9 @@ const Coupon = () => {
         <h4>Is this a spam email? {String(data?.spam)}</h4>
       </div>
 
-      <button type="submit" className='coupon-bttn' onClick={() => ({show: ! show})}>Unlock Coupon Code</button>
+       <button type="submit" className='coupon-bttn' onClick={() => ({show: ! show})}>Unlock Coupon Code</button>
 
-      <h4 style={{display: (show ? "block" :"none")}}>{useNavigate}</h4>
+      <h4 style={{display: (show ? "block" :"none")}}>{useNavigate}</h4> 
 
 
     </div>
