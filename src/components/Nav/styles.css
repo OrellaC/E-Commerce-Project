@@ -1,17 +1,17 @@
 *{
-    max-width: 1500px;
-
-    margin: auto;
+    max-width: 1960px;
+    margin:;
 }
+
 .navbar{
     /* background-color: blue; */
     padding: 10px;
     margin-bottom: px;
     font-size: 20px;
+    
 }
 
 .nav-banner{
-    
     width: 50%;
     height: 50%;
    margin-left: -11%;

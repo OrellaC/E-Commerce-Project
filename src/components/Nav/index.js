@@ -32,7 +32,7 @@ const Nav = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="coupon">Coupon Code</Link>
+              <Link className="nav-link" to="coupon">Coupon-Code</Link>
             </li>
 
             <li className="nav-item">
@@ -40,7 +40,7 @@ const Nav = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="geo">Geo Location Services</Link>
+              <Link className="nav-link" to="geo">GeoLocation </Link>
             </li>
           </ul>
         </div>

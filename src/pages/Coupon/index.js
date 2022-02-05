@@ -9,7 +9,7 @@ const Coupon = () => {
   const [total, setTotal] = useState()
 
 
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
 
 
@@ -40,12 +40,13 @@ const Coupon = () => {
     console.log(userInput)
     fetchEmail()
 
-    // navigate('/coupon/code')
+    navigate('/coupon/code')
   }
 
   const show = false
-const errorMssg =
-"please enter a valid message"
+
+  const errorMssg =
+    "please enter a valid email address"
 
 
   // const checkEmail = (data) => {
@@ -90,9 +91,9 @@ const errorMssg =
       <div className='coupon-holder'>
 
 
-       {data?.webmail ? <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button> : errorMssg} 
+        {data?.webmail ? <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code{useNavigate}</button> : null}
 
-       
+
 
         {/* <h4 style={{ display: (show ? "block" : "none") }}>{useNavigate}</h4> */}
       </div>

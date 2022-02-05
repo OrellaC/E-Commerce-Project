@@ -27,10 +27,12 @@ const Home = () => {
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
 
+
+                    <div className='carousel-container'>
                     {/* Carousel Image 1 */}
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="10000">
-                            <img src={woman} className=" d-block w-100 caro-imgs" alt="..." />
+                            <img src={woman} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -38,19 +40,21 @@ const Home = () => {
 
                         {/* Carousel Image 2 */}
                         <div className="carousel-item" data-bs-interval="2000">
-                            <img src={blckwmn} className="d-block w-100" alt="..." />
+                            <img src={blckwmn} className=" img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
 
 
                         {/* Carousel Image 3 */}
-                        <div className="carousel-item">
-                            <img src={OrTech2} className="d-block w-100 caro-imgs" alt="..." />
+                        <div className="carousel-item" data-bs-interval="2000"> 
+                            <img src={woman2} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                     </div>
+                    </div>
+                      
 
 
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -65,10 +69,12 @@ const Home = () => {
 
 
                 {/* Bootstrap Card boxes */}
-                <div className='image-box d-flex flex-row'>
+                <div className='image-box'>
                     <div className='child-box'>
-                        <div className="card ">
-                            <img className="card-img-top" src={black2tech} alt="Card image cap" />
+
+               
+                        <div className="card info-cards">
+                            <img className="card-img-top card-image" src={black2tech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Website Packages</h5>
                                 <p className="card-text">We offer various website packages for both big and small companies.</p>
@@ -76,8 +82,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card ">
-                            <img className="card-img-top" src={blacktech} alt="Card image cap" />
+                        <div className="card info-cards">
+                            <img className="card-img-top card-image" src={blacktech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Careers at OrTech WebBuilders</h5>
                                 <p className="card-text"> Here at OrTech we are always looking for innovative minds to help us create a more inclusive and successful company.</p>
@@ -85,8 +91,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card ">
-                            <img className="card-img-top " src={woman3} alt="Card image cap" />
+                        <div className="card info-cards">
+                            <img className="card-img-top card-image" src={woman3} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Our Mission</h5>
                                 <p className="card-text">Our mission at OrTech is to help businesses create innovative user friendly websites that can help achieve all of their goals.</p>
@@ -95,8 +101,8 @@ const Home = () => {
                         </div>
 
 
-                        <div className="card ">
-                            <img className="card-img-top" src={woman2} alt="Card image cap" />
+                        <div className="card info-cards">
+                            <img className="card-img-top card-image" src={OrTech2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Contact Us</h5>
                                 <p className="card-text">We are an online based tech company that is accessible by email and phone. </p>
@@ -106,14 +112,13 @@ const Home = () => {
 
                 
 
-                    </div>
-                    {/* ^ Closes Child Container  */}
+                  
+                    
 
                 </div>
 
             </div>
-
-
+            </div>
         </div>
     );
 }
