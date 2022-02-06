@@ -12,7 +12,9 @@ const Nav = () => {
   
   return (
     <div className='nav-container'>
+      <Link to="/">
          <img src ={updatedLogo} className='nav-banner' />
+         </Link>
     <nav className="navbar navbar-expand-lg navbar-light bg-info">
    
       <div className="container-fluid">

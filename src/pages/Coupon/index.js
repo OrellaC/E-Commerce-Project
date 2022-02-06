@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./styles.css"
+import emailVer from "./Images/emailVer.png"
 
 const Coupon = () => {
   const [userInput, setUserInput] = useState('')
@@ -43,10 +44,23 @@ const Coupon = () => {
 
   return (
 
-    <div className="form-body">
+    
+
+      <div className='parent'>
+            <div className='container'>
+
+            <div className='carousel-container'>
+                    {/* Carousel Image 1 */}
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-bs-interval="10000">
+                            <img src={emailVer} className="img-fluid d-block w-100 caro-imgs" alt="..." />
+                            <div className="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                       </div> 
+
+                       <div className="form-body">
       {console.log(data)}
-
-
       <div className='header'>
         <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address.</h1>
       </div>
@@ -81,7 +95,10 @@ const Coupon = () => {
           {data?.webmail ? <button type="button" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
         </Link>
       </div>
+    </div>
 
+    </div>
+    </div>
     </div>
 
   );

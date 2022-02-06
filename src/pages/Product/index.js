@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-import App from "../../App"
+import eComm from "./Images/eComm.png"
 
 // Css
 import "./styles.css"
@@ -11,6 +9,7 @@ const Product = ({itemList, items, addToCart}) => {
     console.log(itemList)
     return (
         <div className="product-container">
+            <img src={eComm} />
 
             {
                 itemList.map((items) => {
