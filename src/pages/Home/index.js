@@ -87,7 +87,7 @@ const Home = () => {
                         <div className="card info-cards border-primary">
                             <img className="card-img-top card-image" src={blacktech} alt="Card image cap" />
                             <div className="card-body">
-                                <h5 className="card-title">Careers at OrTech WebBuilders</h5>
+                                <h5 className="card-title">Careers at OrTech</h5>
                                 <p className="card-text"> Here at OrTech we are always looking for innovative minds to help us create a more inclusive and successful company.</p>
                                 <a href="#" className="btn btn-primary">View Careers</a>
                             </div>
