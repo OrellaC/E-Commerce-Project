@@ -6,13 +6,12 @@ import banner from "./Images/banner.png"
 import blacktech from "./Images/blacktech.jpg"
 import black2tech from "./Images/black2tech.jpeg"
 import blckwmn from "./Images/blckwmn.jpeg"
-import woman from "./Images/woman.jpeg"
-import woman2 from "./Images/woman2.jpeg"
 import woman3 from "./Images/woman3.jpeg"
 import updatedLogo from "./Images/updatedLogo.png"
 import OrTech2 from "./Images/OrTech2.png"
 import homeBanner from "./Images/homeBanner.png"
 import homeBanner2 from "./Images/homeBanner2.png"
+import homeBanner3 from "./Images/homeBanner3.png"
 
 //CSS
 import "./styles.css"
@@ -50,7 +49,7 @@ const Home = () => {
 
                         {/* Carousel Image 3 */}
                         <div className="carousel-item" data-bs-interval="2000"> 
-                            <img src={woman2} className="img-fluid d-block w-100 caro-imgs" alt="..." />
+                            <img src={homeBanner3} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -76,7 +75,7 @@ const Home = () => {
                     <div className='child-box'>
 
                
-                        <div className="card info-cards">
+                        <div className="card info-cards border-primary">
                             <img className="card-img-top card-image" src={black2tech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Website Packages</h5>
@@ -85,7 +84,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card info-cards">
+                        <div className="card info-cards border-primary">
                             <img className="card-img-top card-image" src={blacktech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Careers at OrTech WebBuilders</h5>
@@ -94,7 +93,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card info-cards">
+                        <div className="card info-cards border-primary">
                             <img className="card-img-top card-image" src={woman3} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Our Mission</h5>
@@ -102,10 +101,8 @@ const Home = () => {
                                 <a href="#" className="btn btn-primary">View Our Mission</a>
                             </div>
                         </div>
-
-
                     
-                        <div className="contact-card">
+                        <div className="card info-cards border-primary">
                             <img className="card-img-top card-image" src={OrTech2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Contact Us</h5>
