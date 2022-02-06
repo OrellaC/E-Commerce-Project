@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./styles.css"
@@ -8,14 +8,6 @@ const Coupon = () => {
   const [data, setData] = useState({})
   const [total, setTotal] = useState()
 
-  // const Send = () =>{
-  //   const navigate = useNavigate();
-
-  //   const eventHandler = () => {
-  //     navigate('/coupon/code')
-    
-  //   }
-  // } 
 
   useEffect(() => {
     fetchEmail()
@@ -72,7 +64,7 @@ const Coupon = () => {
           required
         />
         <input type='submit' value='Submit' />
-      
+
       </form>
 
       <div className="email-box">
@@ -84,11 +76,10 @@ const Coupon = () => {
 
 
       <div className='coupon-holder'>
-<Link to="/coupon/code">
-          {data?.webmail ? <button type="button" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
-          </Link>
-     
 
+        <Link to="/coupon/code">
+          {data?.webmail ? <button type="button" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
+        </Link>
       </div>
 
     </div>
