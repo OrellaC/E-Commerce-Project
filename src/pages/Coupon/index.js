@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./styles.css"
@@ -8,10 +8,14 @@ const Coupon = () => {
   const [data, setData] = useState({})
   const [total, setTotal] = useState()
 
+  // const Send = () =>{
+  //   const navigate = useNavigate();
 
-  const navigate = useNavigate()
-
-
+  //   const eventHandler = () => {
+  //     navigate('/coupon/code')
+    
+  //   }
+  // } 
 
   useEffect(() => {
     fetchEmail()
@@ -39,21 +43,11 @@ const Coupon = () => {
     e.preventDefault()
     console.log(userInput)
     fetchEmail()
-
-    navigate('/coupon/code')
   }
+
 
   const show = false
 
-  const errorMssg =
-    "please enter a valid email address"
-
-
-  // const checkEmail = (data) => {
-  //   if (data?.webmail){
-  //     return <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button> ;
-  //   }
-  // }
 
   return (
 
@@ -78,6 +72,7 @@ const Coupon = () => {
           required
         />
         <input type='submit' value='Submit' />
+      
       </form>
 
       <div className="email-box">
@@ -89,13 +84,11 @@ const Coupon = () => {
 
 
       <div className='coupon-holder'>
+<Link to="/coupon/code">
+          {data?.webmail ? <button type="button" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
+          </Link>
+     
 
-
-        {data?.webmail ? <button type="submit" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code{useNavigate}</button> : null}
-
-
-
-        {/* <h4 style={{ display: (show ? "block" : "none") }}>{useNavigate}</h4> */}
       </div>
 
     </div>

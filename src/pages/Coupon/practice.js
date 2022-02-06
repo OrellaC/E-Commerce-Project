@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Practice = () => {
     const [userInput, setUserInput] = useState('')
     const [data, setData] = useState([])
-    const navigate = useNavigate()
+
 
 
 
@@ -31,7 +32,7 @@ const Practice = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        navigate('/coupon/code')
+      
     }
 
 

@@ -32,7 +32,7 @@ const Nav = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="coupon">Coupon-Code</Link>
+              <Link className="nav-link" to="coupon">Coupon</Link>
             </li>
 
             <li className="nav-item">
