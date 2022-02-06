@@ -1,5 +1,4 @@
 import React from 'react';
-import cartImage from "./Images/cartImage.png"
 import eComm from "../Product/Images/eComm.png"
 
 // Css
