@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import locationBanner from './Images/locationBanner.png'
 
 const Geo = () => {
     const [data, setData] = useState({})
@@ -23,6 +24,7 @@ const Geo = () => {
       }
     return (
         <div>
+            <img src={locationBanner} />
                   <div className='header'>
       <h1>Geolocation tracker </h1>
       </div>

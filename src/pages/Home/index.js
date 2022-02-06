@@ -66,6 +66,7 @@ const Home = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
+                
 
 
                 {/* Bootstrap Card boxes */}
@@ -101,7 +102,8 @@ const Home = () => {
                         </div>
 
 
-                        <div className="card info-cards">
+                    
+                        <div className="contact-card">
                             <img className="card-img-top card-image" src={OrTech2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Contact Us</h5>
@@ -110,7 +112,6 @@ const Home = () => {
                             </div>
                         </div>
 
-                
 
                   
                     
