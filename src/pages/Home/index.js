@@ -11,6 +11,8 @@ import woman2 from "./Images/woman2.jpeg"
 import woman3 from "./Images/woman3.jpeg"
 import updatedLogo from "./Images/updatedLogo.png"
 import OrTech2 from "./Images/OrTech2.png"
+import homeBanner from "./Images/homeBanner.png"
+import homeBanner2 from "./Images/homeBanner2.png"
 
 //CSS
 import "./styles.css"
@@ -32,7 +34,7 @@ const Home = () => {
                     {/* Carousel Image 1 */}
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="10000">
-                            <img src={woman} className="img-fluid d-block w-100 caro-imgs" alt="..." />
+                            <img src={homeBanner} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -40,7 +42,7 @@ const Home = () => {
 
                         {/* Carousel Image 2 */}
                         <div className="carousel-item" data-bs-interval="2000">
-                            <img src={blckwmn} className=" img-fluid d-block w-100 caro-imgs" alt="..." />
+                            <img src={homeBanner2} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
