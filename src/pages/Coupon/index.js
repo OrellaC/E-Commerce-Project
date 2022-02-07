@@ -61,10 +61,10 @@ const Coupon = () => {
         </div>
 
         {/* Bootstrap Card */}
-        <div className="card text-center">
+        <div className="card text-center border-primary">
           <div className="card-body">
-            <h3 className="card-title">Email Verification</h3>
-            <p className="card-text">In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address. </p>
+            <h2 className="card-title">Email Verification</h2>
+            <h4 className="card-text">In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address. </h4>
             {console.log(data)}
             <form onSubmit={(e) => {
               return handleSubmit(e)
@@ -83,7 +83,7 @@ const Coupon = () => {
 
             <div className='coupon-holder'>
               <Link to="/coupon/code">
-                {data?.webmail ? <button type="button" className='coupon-bttn' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
+                {data?.webmail ? <button type="button" className='btn btn-success btn-lg btn-block' onClick={() => ({ show: !show })}>Unlock Coupon Code</button > : null}
               </Link>
             </div>
 
@@ -97,17 +97,21 @@ const Coupon = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">API Parameters</h5>
-                <h6 className="card-text">Email Address: {data?.email_address}</h6>
-                <p>Is this email syntax valid? {String(data?.valid_syntax)} </p>
-                <p className="card-text">Is this a spam email? {String(data?.spam)}</p>
-                <p className="card-text">Is this a webmail? {String(data?.webmail)}</p>
-
-                <div className="card-body text-center">
-                  <h5 className="card-title">This information will appear on the client's side.</h5>
+                <div className="card-body text-dark bg-warning mb-3 rounded">
+                  <h3 className="card-title text-center">The information below will appear on the client's side.</h3>
                   <p className="card-text"> Client's will be able to see which parameters of the API the user's email matches. </p>
                   <p>If the user's email does not validate true for "Is this a webmail", they will not be able to view the coupon code until they enter a valid email address. </p>
                 </div>
+
+
+                <div className='border border-success rounded text-white bg-success'>
+                  <h3 className="card-title text-center text-white">API Parameters</h3>
+                  <h5 className="card-text text-white">Email Address: {data?.email_address}</h5>
+                  <h5 className="card-text text-white">Is this email syntax valid? {String(data?.valid_syntax)} </h5>
+                  <h5 className="card-text text-white">Is this a spam email? {String(data?.spam)}</h5>
+                  <h5 className="card-text text-white">Is this a webmail? {String(data?.webmail)}</h5>
+                </div>
+
               </div>
             </div>
 
