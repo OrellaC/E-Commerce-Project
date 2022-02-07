@@ -1,17 +1,28 @@
 .form-body{
-    margin: 4em;
-    padding: 4em
+    /* margin: 4em;
+    padding: 4em */
+   background-color: red;
 }
 .form-child{
-  
+    
 }
 
 .header{
     padding: 5em;
     border: solid black 2px;
-    background-color: whitesmoke;
+    /* background-image: url(./Images/envelope.png); */
 }
 
 .email-box{
     padding: 5em;
+}
+.email-info{
+
+}
+.email-data{
+    
+}
+
+.parent{
+     
 }
