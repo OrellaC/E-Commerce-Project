@@ -97,14 +97,14 @@ const Coupon = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <div className="card-body text-dark bg-warning mb-3 rounded">
+                <div className="card-body text-dark bg-warning mb-3 p-4 rounded">
                   <h3 className="card-title text-center">The information below will appear on the client's side.</h3>
                   <p className="card-text"> Client's will be able to see which parameters of the API the user's email matches. </p>
                   <p>If the user's email does not validate true for "Is this a webmail", they will not be able to view the coupon code until they enter a valid email address. </p>
                 </div>
 
 
-                <div className='border border-success rounded text-white bg-success'>
+                <div className='border border-success rounded text-white bg-success mb-3 p-4'>
                   <h3 className="card-title text-center text-white">API Parameters</h3>
                   <h5 className="card-text text-white">Email Address: {data?.email_address}</h5>
                   <h5 className="card-text text-white">Is this email syntax valid? {String(data?.valid_syntax)} </h5>
