@@ -20,6 +20,7 @@
 .child-box{
     display: inline-flex;
     gap: 2rem;
+    height: 10em;
 }
 
 .parent{

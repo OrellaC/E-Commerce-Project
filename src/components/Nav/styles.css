@@ -1,6 +1,7 @@
 *{
-    max-width: 1960px;
-    margin:;
+    max-width: 1500px;
+    margin: auto;
+
 }
 
 .navbar{
@@ -8,6 +9,7 @@
     padding: 10px;
     margin-bottom: px;
     font-size: 20px;
+    justify-content: center;
     
 }
 
@@ -15,6 +17,5 @@
     width: 50%;
     height: 50%;
    margin-left: -11%;
-   padding: 0;;
 }
 
