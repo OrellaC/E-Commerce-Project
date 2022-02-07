@@ -2,8 +2,16 @@
     margin: 4em;
     padding: 4em
 }
+.form-child{
+  
+}
 
 .header{
     padding: 5em;
     border: solid black 2px;
+    background-color: whitesmoke;
+}
+
+.email-box{
+    padding: 5em;
 }

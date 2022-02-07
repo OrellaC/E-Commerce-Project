@@ -4,6 +4,7 @@ import axios from 'axios'
 import "./styles.css"
 import emailVer from "./Images/emailVer.png"
 
+
 const Coupon = () => {
   const [userInput, setUserInput] = useState('')
   const [data, setData] = useState({})
@@ -58,9 +59,10 @@ const Coupon = () => {
 
           <div className="form-body">
             {console.log(data)}
+            <div className='form-child'>
             <div className='header'>
               <h1>In order to receive 25% off your first order, you must subscribe to our mailing list by providing a valid email address.</h1>
-            </div>
+           
 
             <form onSubmit={(e) => {
               return handleSubmit(e)
@@ -75,10 +77,14 @@ const Coupon = () => {
                 required
               />
               <input type='submit' value='Submit' />
-
             </form>
+            </div>
+            </div>
+
+
 
             <div className="email-box">
+              <h3>This what will appear on the client side. Client's will be able to see which parameters of the API the user's email matches. If the user's email does not validate true for "Is this a webmail", they will not be able to view the coupon code until they enter a valid email address.</h3>
               <h4>Email Address:{data?.email_address}</h4>
               <h4>Is this email syntax valid? {String(data?.valid_syntax)}</h4>
               <h4>Is this a spam email? {String(data?.spam)}</h4>
