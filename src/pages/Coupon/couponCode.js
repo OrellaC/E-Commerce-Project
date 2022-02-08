@@ -14,7 +14,7 @@ const Couponcode = () => {
         }, 1000);
     };
 
-    const show=false
+
  
     // I used the code below I found online to create a clipboard function for the coupon code 
     //https://dev.to/myogeshchavan97/an-easy-way-for-adding-copy-to-clipboard-functionality-in-react-app-4oo0

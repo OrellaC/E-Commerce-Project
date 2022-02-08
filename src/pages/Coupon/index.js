@@ -3,14 +3,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./styles.css"
 import emailVer from "./Images/emailVer.png"
-import envelope from "./Images/envelope.png"
-import emailLogo from "./Images/emailLogo.jpeg"
 import emailTech from "./Images/emailTech.png"
 
 const Coupon = () => {
   const [userInput, setUserInput] = useState('')
   const [data, setData] = useState({})
-  const [total, setTotal] = useState()
+
 
 
   useEffect(() => {

@@ -1,13 +1,9 @@
 import React from 'react';
 
 //Images
-import OrTech from "./Images/OrTech.png"
-import banner from "./Images/banner.png"
 import blacktech from "./Images/blacktech.jpg"
 import black2tech from "./Images/black2tech.jpeg"
-import blckwmn from "./Images/blckwmn.jpeg"
 import woman3 from "./Images/woman3.jpeg"
-import updatedLogo from "./Images/updatedLogo.png"
 import OrTech2 from "./Images/OrTech2.png"
 import homeBanner from "./Images/homeBanner.png"
 import homeBanner2 from "./Images/homeBanner2.png"
