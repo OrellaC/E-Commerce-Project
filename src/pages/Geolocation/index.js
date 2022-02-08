@@ -46,17 +46,18 @@ const Geo = () => {
                             <div className="col-md-8">
                                 <div className='mb-4 rounded bg-warning p-3'>
                                     <h1 className='text-center'>Geolocation API </h1>
-                                    <h5 className='text-center'> We at OrTech believe that businesses thrive when they are able to identify their target demographic in the most specific details.</h5>
+                                    <h5 className='text-center'> We at OrTech believe that businesses thrive when they are able to identify their target demographic in the most specific details. The location for every site user will be complied and sent to the site owner.</h5>
 
                                     <h3 className='text-center'> <u> Implementing our geolocation API will: </u> </h3>
 
                                     <ul>
                                         <li> Help client's identify the regions where their customers are accessing their website from</li>
-                                        <li>Allow client's to better tailor their advertisements and other promotional material</li>
+                                        <li>Allow client's to better tailor their advertisements and other promotional material based on user location</li>
                                     </ul>
                                 </div>
 
                                 <div className="info-box border border-success bg-primary rounded text-center text-white p-4">
+                                    <h4><u>This API allows clients to see the location of their site users</u></h4>
                                     <h4>City: {data?.city}</h4>
                                     <h4>Country: {data?.country}</h4>
                                     <h4>Region: {data?.regionName}</h4>

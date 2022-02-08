@@ -13,7 +13,10 @@ const Couponcode = () => {
             setIsCopied(false);
         }, 1000);
     };
-    // I used this code I found online to create a clipboard function for the coupon code 
+
+    const show=false
+ 
+    // I used the code below I found online to create a clipboard function for the coupon code 
     //https://dev.to/myogeshchavan97/an-easy-way-for-adding-copy-to-clipboard-functionality-in-react-app-4oo0
     return (
         <div className='parent'>
@@ -31,30 +34,39 @@ const Couponcode = () => {
 
 
                     <div className='coupon-container'>
-                        <h1> Congratulations! Copy the code below for 25% your first order. </h1>
-                        
-                        
-                        <div className='form-box'>
-                            <form
-                                type="text"
-                                value={"Per-Scholas-25"}
-                                onChange={(event) => setText(event.target.value)}> Per-Scholas-25</form>
-                         
-                            <CopyToClipboard text={"Per-Scholas-25"} onCopy={onCopyText}>
-                                <div className="copy-area">
-                                    <button>Copy</button>
-                                    <span className={`copy-feedback ${isCopied ? "active" : ""}`}>
-                                    </span>
+                            <div className="card p-4 text-center text-white bg-primary rounded">
+                                
+                                    <h2 className="card-title"> Congratulations! Copy the code below for 25% off your first order.</h2>
+
+                                    <form
+                                        className='card-body'
+                                        type="text"
+                                        value={"Per-Scholas-25"}
+                                        onChange={(event) => setText(event.target.value)}><h4>Per-Scholas-25 </h4> </form>
+
+                                    <CopyToClipboard text={"Per-Scholas-25"} onCopy={onCopyText}>
+                                        <div className="copy-area">
+                                            <button className='btn btn-lg btn-warning'>Copy</button>
+                                            <span className={`copy-feedback ${isCopied ? "active" : ""}`}>
+                                            </span>
+                                            
+                                        </div>
+                                    </CopyToClipboard>
                                 </div>
-                            </CopyToClipboard>
+                                <div className="card-footer text-muted">
+                                    If you encounter any issues with this code please contact our help desk at 555-555-5555 or helpdesk@ortech.org
+                                </div>
+                            </div>
 
 
+
+                
                         </div>
                     </div>
                 </div>
-            </div>
+            
 
-        </div>
+        
     );
 }
 

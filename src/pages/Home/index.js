@@ -97,7 +97,7 @@ const Home = () => {
                             <img className="card-img-top card-image" src={woman3} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Our Mission</h5>
-                                <p className="card-text">Our mission at OrTech is to help businesses create innovative user friendly websites that can help achieve all of their goals.</p>
+                                <p className="card-text">Our mission at OrTech is to help businesses create innovative user friendly websites that assist in achieving their goals.</p>
                                 <a href="#" className="btn btn-primary">View Our Mission</a>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ const Home = () => {
                             <img className="card-img-top card-image" src={OrTech2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Contact Us</h5>
-                                <p className="card-text">We are an online based tech company that is accessible by email and phone. </p>
+                                <p className="card-text">We are an online based tech company that is accessible by both email and phone. </p>
                                 <a href="#" className="btn btn-primary">Contact Us</a>
                             </div>
                         </div>
