@@ -12,7 +12,7 @@ const Geo = () => {
         fetchLocation()
     }, [])
 
-
+// Unfortunately this API is only HTTP accessible and not HTTPS. Therefore, it is not secure or accessible outside of my local host 
     const fetchLocation = async () => {
         try {
             const response = await axios.get('http://ip-api.com/json/')
@@ -23,11 +23,12 @@ const Geo = () => {
             console.log(data)
         }
     }
+    
     return (
         <div className='parent'>
             <div className='container'>
 
-                {/* Bootstrap for Carousel BannesImage */}
+                {/* Bootstrap for Carousel BannerImages */}
                 <div className='carousel-container'>
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="10000">
