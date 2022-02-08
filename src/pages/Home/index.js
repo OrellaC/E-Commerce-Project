@@ -75,7 +75,7 @@ const Home = () => {
                             <img className="card-img-top card-image" src={black2tech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Website Packages</h5>
-                                <p className="card-text">We offer various website packages for both big and small companies.</p>
+                                <p className="card-text">We offer various website packages for companies both big and small .</p>
                                 <a href="#" className="btn btn-primary">View Packages</a>
                             </div>
                         </div>
