@@ -100,7 +100,7 @@ const Coupon = () => {
                 <div className="card-body text-dark bg-warning mb-3 p-4 rounded">
                   <h3 className="card-title text-center">The information below will appear on the client's side.</h3>
                   <p className="card-text"> Client's will be able to see which parameters of the API the user's email matches. </p>
-                  <p>If the user's email does not validate true for "Is this a webmail", they will not be able to view the coupon code until they enter a valid email address. </p>
+                  <p>If the user's email does not validate true for "Is this a webmail", they will not be able to access the coupon code until they enter a valid email address. </p>
                 </div>
 
 
