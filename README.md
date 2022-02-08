@@ -1,5 +1,5 @@
 <h1>Description</h1>
-
+<img src="projectRequirements.png">
 <h3>Create a website that meets the following requirements: </h3>
 
 <ul>
@@ -24,7 +24,7 @@
 
 <h3><u>Approach Taken:</u></h3>
 
-<h3><u> Unsolved Issues:</u></h3>
+<h3><u> Unsolved Issues: I was unable to make the website accessible. It looks distorted on mobile viewing </u></h3>
 
 
 <h3><u> Future Plans for Project:</u></h3>
