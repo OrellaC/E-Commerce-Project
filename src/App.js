@@ -10,6 +10,8 @@ import Coupon from "./pages/Coupon"
 import Product from "./pages/Product"
 import Home from "./pages/Home"
 import Geolocation from "./pages/Geolocation"
+import Wishlist from './pages/Wishlist';
+import Contact from './pages/Contact';
 //Contexts
 import UserContext from "./contexts/UserContext"
 //CSS
@@ -75,6 +77,10 @@ const App = () => {
           />}
           />
           <Route path="geo" element={<Geolocation />}/>
+
+          <Route path="wishlist" element={<Wishlist />}/>
+
+          <Route path="contact" element={<Contact />}/>
 
         </Routes>
 
