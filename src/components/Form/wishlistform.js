@@ -15,7 +15,7 @@ const WishlistForm = ({ fetchItems, editForm, editItem }) => {
             itemdescription: itemDescription
         }
         try {
-            // To Edit/Update a wishlist item 
+            // To Edit a wishlist item 
             if (editForm) {
                 const response = await axios.put(`http://localhost:8080/api/v1/updateitem/${editItem.id}`, newItem)
 

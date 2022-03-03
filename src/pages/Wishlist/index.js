@@ -41,7 +41,7 @@ const Wishlist = () => {
     }
 
     // console.log("These are the items on your wishlist ", wItems)
-    
+
     return (
         <>
             <WishlistForm 
@@ -72,7 +72,7 @@ const Wishlist = () => {
                                     <td>{wItems.id}</td>
 
                                     <td onClick={() => handleEdit(wItems)}>Edit</td>
-                                    <td onClick={() => deleteItem(wItems.id)}>delete</td>
+                                    <td onClick={() => deleteItem(wItems.id)}>Delete</td>
 
 
                                    
