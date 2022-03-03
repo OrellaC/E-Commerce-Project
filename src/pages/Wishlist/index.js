@@ -28,7 +28,7 @@ const Wishlist = () => {
 
     const deleteItem = async (id) => {
         try{
-            const response = await axios.delete(`http://localhost:8080/api/v1/deletitem/${id}`) 
+            const response = await axios.delete(`http://localhost:8080/api/v1/deleteitem/${id}`) 
             fetchListItems()
         }catch (error){
             console.log(error)

@@ -28,9 +28,8 @@ const WishlistForm = ({ fetchItems, editForm, editItem }) => {
                     setItemDescription('')
                 }
             }
-
             fetchItems()
-        } catch (error) {
+        }catch (error) {
             console.log(error)
         }
     }
