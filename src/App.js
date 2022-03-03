@@ -17,6 +17,7 @@ import UserContext from "./contexts/UserContext"
 //CSS
 import "./App.css"
 import Couponcode from './pages/Coupon/couponCode';
+import WishlistForm from './components/Form/wishlistform';
 
 
 const App = () => {
@@ -79,6 +80,8 @@ const App = () => {
           <Route path="geo" element={<Geolocation />}/>
 
           <Route path="wishlist" element={<Wishlist />}/>
+
+          {/* <Route path="WishlistForm" element={<WishlistForm />}/> */}
 
           <Route path="contact" element={<Contact />}/>
 
