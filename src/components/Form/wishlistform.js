@@ -17,11 +17,11 @@ const WishlistForm = ({ fetchItems, editForm, editItem }) => {
         try {
             // To Edit a wishlist item 
             if (editForm) {
-                const response = await axios.put(`http://localhost:8080/api/v1/updateitem/${editItem.id}`, newItem)
+                const response = await axios.put(`https://ecommbackend2022.herokuapp.com/api/v1/updateitem/${editItem.id}`, newItem)
 
                 // Adding an item to wishlist 
             } else {
-                const response = await axios.post('http://localhost:8080/api/v1/additem', newItem)
+                const response = await axios.post('https://ecommbackend2022.herokuapp.com/api/v1/additem', newItem)
 
                 if (response.status === 200) {
                     setItemName('')

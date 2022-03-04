@@ -16,11 +16,11 @@ const HelpForm = ({fetchIssue, editIssue, editForm }) => {
         try{
             // To Edit an Issue on Help Request form
             if(editForm){
-                const response = await axios.put(`http://localhost:8080/api/v1/updateissue/${editIssue.id}`, newIssue)
+                const response = await axios.put(`https://ecommbackend2022.herokuapp.com/api/v1/updateissue/${editIssue.id}`, newIssue)
 
                 // Adding an issue to form 
             }else{
-                const response = await axios.post('http://localhost:8080/api/v1/addissue', newIssue)
+                const response = await axios.post('https://ecommbackend2022.herokuapp.com/api/v1/addissue', newIssue)
 
                 if (response.status === 200){
                     setIssueType('')

@@ -15,7 +15,7 @@ const Wishlist = () => {
     const fetchListItems = async () => {
         try {
 
-            const response = await axios.get("http://localhost:8080/api/v1/checkallitems")
+            const response = await axios.get("https://ecommbackend2022.herokuapp.com/api/v1/checkallitems")
 
             console.log(response)
             setWItems(response.data)
@@ -28,7 +28,7 @@ const Wishlist = () => {
 
     const deleteItem = async (id) => {
         try{
-            const response = await axios.delete(`http://localhost:8080/api/v1/deleteitem/${id}`) 
+            const response = await axios.delete(`https://ecommbackend2022.herokuapp.com//api/v1/deleteitem/${id}`) 
             fetchListItems()
         }catch (error){
             console.log(error)

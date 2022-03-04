@@ -14,7 +14,7 @@ const Contact = () => {
 
     const fetchIssues = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/api/v1/checkallissues")
+            const response = await axios.get("https://ecommbackend2022.herokuapp.com/api/v1/checkallissues")
 
             console.log(response)
             setHIssues(response.data)
@@ -26,7 +26,7 @@ const Contact = () => {
 
     const deleteIssue = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:8080/api/v1/deleteissue/${id}`)
+            const response = await axios.delete(`https://ecommbackend2022.herokuapp.com/api/v1/deleteissue/${id}`)
             fetchIssues()
         } catch (error) {
             console.log(error)
