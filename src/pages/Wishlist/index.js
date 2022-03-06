@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import WishlistForm from '../../components/Form/wishlistform';
+import "./styles.css"
 
 const Wishlist = () => {
 
@@ -44,6 +45,7 @@ const Wishlist = () => {
 
     return (
         <>
+        <div className='card mb-3 center border-primary style={{ maxwidth: "540px" }}'>
             <WishlistForm 
             fetchListItems={fetchListItems}
             editForm={editForm}
@@ -51,7 +53,7 @@ const Wishlist = () => {
             />
 
 
-            <table className="table">
+            <table className="table info-box border border-success bg-primary rounded text-center text-white p-4 ">
                 <thead>
                     <tr>
                         <th scope="col">Item Name</th>
@@ -82,7 +84,7 @@ const Wishlist = () => {
                     }
                 </tbody>
             </table>
-
+            </div>
         </>
     );
 }

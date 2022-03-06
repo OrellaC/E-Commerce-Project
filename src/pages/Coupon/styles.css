@@ -1,18 +1,18 @@
-
 .form-body{
-    /* margin: 4em;
-    padding: 4em */
-   background-color: red;
-}
-.form-child{
+    margin: 4em;
+     padding: 4em;
+    background-color: red; 
+}  
+
+.form-child{ 
     
-}
+} 
 
 .header{
     padding: 5em;
-    border: solid black 2px;
+    border: solid black 2px; 
     /* background-image: url(./Images/envelope.png); */
-}
+} 
 
 
 

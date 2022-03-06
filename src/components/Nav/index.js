@@ -50,11 +50,15 @@ const Nav = () => {
 
               <li className="nav-item">
                 <Link className="nav-link" to="wishlist">Wishlist </Link>
-
-                <li className="nav-item">
+              </li>
+              
+              <li className="nav-item">
                 <Link className="nav-link" to="contact">Contact</Link>
               </li>
-              </li>
+
+
+
+
             </ul>
           </div>
         </div>

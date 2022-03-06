@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import HelpForm from '../../components/Form/helpform';
-
+import "./styles.css"
 const Contact = () => {
 
     const [hIssues, setHIssues] = useState([])
