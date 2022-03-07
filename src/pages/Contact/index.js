@@ -41,48 +41,49 @@ const Contact = () => {
 
     return (
         <>
-            <HelpForm
-                fetchIssues={fetchIssues}
-                editForm={editForm}
-                editIssue={editIssue}
-            />
+            <div className='card mb-3 center border-primary style={{ maxwidth: "540px" }}'>
+                <HelpForm
+                    fetchIssues={fetchIssues}
+                    editForm={editForm}
+                    editIssue={editIssue}
+                />
 
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Issue Type </th>
-                        <th scope="col">Issue Description</th>
-                        <th scope="col">ID Number</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Issue Type </th>
+                            <th scope="col">Issue Description</th>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                {
-                        hIssues.map(hIssues => {
-                            return (
-                                <tr key={hIssues.id}>
-                                    <td>{hIssues.issueType}</td>
-                                    <td>{hIssues.issuedescription}</td>
-                                    <td>{hIssues.id}</td>
+                        {
+                            hIssues.map(hIssues => {
+                                return (
+                                    <tr key={hIssues.id}>
+                                        <td>{hIssues.issueType}</td>
+                                        <td>{hIssues.issuedescription}</td>
+                                        <td>{hIssues.id}</td>
 
-                                    <td onClick={() => handleEdit(hIssues)}>Edit</td>
-                                    <td onClick={() => deleteIssue(hIssues.id)}>Delete</td>
-
-
-                                   
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
+                                        <td onClick={() => handleEdit(hIssues)}>Edit</td>
+                                        <td onClick={() => deleteIssue(hIssues.id)}>Delete</td>
 
 
 
-                </>
-                );
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+                </div>
+           </>
+
+        
+    );
 }
 
-                export default Contact;
+export default Contact;

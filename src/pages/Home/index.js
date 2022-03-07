@@ -27,13 +27,12 @@ const Home = () => {
 
                     <div className='carousel-container'>
                     {/* Carousel Image 1 */}
-                    <div className="carousel-inner">
+                    <div className="carousel-inner ">
                         <div className="carousel-item active" data-bs-interval="10000">
                             <img src={homeBanner} className="img-fluid d-block w-100 caro-imgs" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                             </div>
                         </div>
-
 
                         {/* Carousel Image 2 */}
                         <div className="carousel-item" data-bs-interval="2000">
@@ -67,12 +66,11 @@ const Home = () => {
 
 
                 {/* Bootstrap Card boxes */}
-                <div className='image-box'>
-                    <div className='child-box'>
+          
+                    <div className="card-deck d-inline-flex ">
 
-               
-                        <div className="card info-cards border-primary">
-                            <img className="card-img-top card-image" src={black2tech} alt="Card image cap" />
+                        <div className="card border-primary ">
+                            <img className="card-img-top img-fluid" src={black2tech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Website Packages</h5>
                                 <p className="card-text">We offer various website packages for companies both big and small .</p>
@@ -80,8 +78,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card info-cards border-primary">
-                            <img className="card-img-top card-image" src={blacktech} alt="Card image cap" />
+                        <div className="card border-primary">
+                            <img className="card-img-top img-fluid" src={blacktech} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Careers at OrTech</h5>
                                 <p className="card-text"> Here at OrTech we are always looking for innovative minds to help us create a more inclusive and successful company.</p>
@@ -89,8 +87,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="card info-cards border-primary">
-                            <img className="card-img-top card-image" src={woman3} alt="Card image cap" />
+                        <div className="card border-primary">
+                            <img className="card-img-top img-fluid" src={woman3} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Our Mission</h5>
                                 <p className="card-text">Our mission at OrTech is to help businesses create innovative user friendly websites that assist in achieving their goals.</p>
@@ -98,13 +96,13 @@ const Home = () => {
                             </div>
                         </div>
                     
-                        <div className="card info-cards border-primary">
-                            <img className="card-img-top card-image" src={OrTech2} alt="Card image cap" />
+                        <div className="card border-primary">
+                            <img className="card-img-top img-fluid" src={OrTech2} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title">Contact Us</h5>
                                 <p className="card-text">We are an online based tech company that is accessible by both email and phone. </p>
-                                <a href="#" className="btn btn-primary">Contact Us</a>
-                            </div>
+                                <a href="#" className="btn btn-primary">Contact Us</a> 
+                             </div>
                         </div>
 
 
@@ -115,7 +113,7 @@ const Home = () => {
 
             </div>
             </div>
-        </div>
+     
     );
 }
 
