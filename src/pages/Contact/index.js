@@ -40,7 +40,7 @@ const Contact = () => {
 
 
     return (
-        <>
+        <div className='contactBox'>
             <div className='card mb-3 center border-primary style={{ maxwidth: "540px" }}'>
                 <HelpForm
                     fetchIssues={fetchIssues}
@@ -80,7 +80,7 @@ const Contact = () => {
                     </tbody>
                 </table>
                 </div>
-           </>
+           </div>
 
         
     );

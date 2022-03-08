@@ -44,7 +44,7 @@ const Wishlist = () => {
     // console.log("These are the items on your wishlist ", wItems)
 
     return (
-        <>
+        <div className='wishlistBox'>
         <div className='card mb-3 center border-primary style={{ maxwidth: "540px" }}'>
             <WishlistForm 
             fetchListItems={fetchListItems}
@@ -85,7 +85,7 @@ const Wishlist = () => {
                 </tbody>
             </table>
             </div>
-        </>
+        </div>
     );
 }
 
