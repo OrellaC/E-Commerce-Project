@@ -53,7 +53,7 @@ const Nav = () => {
               </li>
               
               <li className="nav-item">
-                <Link className="nav-link" to="contact">Contact</Link>
+                <Link className="nav-link" to="contact">Help Center</Link>
               </li>
 
 

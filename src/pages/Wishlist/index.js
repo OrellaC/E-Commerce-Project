@@ -28,10 +28,10 @@ const Wishlist = () => {
     }
 
     const deleteItem = async (id) => {
-        try{
-            const response = await axios.delete(`https://ecommbackend2022.herokuapp.com/api/v1/deleteitem/${id}`) 
+        try {
+            const response = await axios.delete(`https://ecommbackend2022.herokuapp.com/api/v1/deleteitem/${id}`)
             fetchListItems()
-        }catch (error){
+        } catch (error) {
             console.log(error)
         }
     }
@@ -45,45 +45,53 @@ const Wishlist = () => {
 
     return (
         <div className='wishlistBox'>
-        <div className='card mb-3 center border-primary style={{ maxwidth: "540px" }}'>
-            <WishlistForm 
-            fetchListItems={fetchListItems}
-            editForm={editForm}
-            editItem={editItem}
-            />
+            <h1 className='text-center'>Wishlist</h1>
+
+            <div className='card mb-8 center border-primary' style={{ maxwidth: "540px" }}>
+                <div>
+                    <h5 className='text-center'> The wishlist feature is a CRUD application that allows users to add any items they would like to be added to the company's e-commerce website .</h5>
+                </div>
 
 
-            <table className="table info-box border border-success bg-primary rounded text-center text-white p-4 ">
-                <thead>
-                    <tr>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Item Description</th>
-                        <th scope="col">ID Number</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
 
-                    {
-                        wItems.map(wItems => {
-                            return (
-                                <tr key={wItems.id}>
-                                    <td>{wItems.itemname}</td>
-                                    <td>{wItems.itemdescription}</td>
-                                    <td>{wItems.id}</td>
-
-                                    <td onClick={() => handleEdit(wItems)}>Edit</td>
-                                    <td onClick={() => deleteItem(wItems.id)}>Delete</td>
+                <WishlistForm
+                    fetchListItems={fetchListItems}
+                    editForm={editForm}
+                    editItem={editItem}
+                />
 
 
-                                   
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
+                <table className="table info-box border border-primary rounded text-center text-black p-4 ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Item Description</th>
+                            <th scope="col">ID Number</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {
+                            wItems.map(wItems => {
+                                return (
+                                    <tr key={wItems.id}>
+                                        <td>{wItems.itemname}</td>
+                                        <td>{wItems.itemdescription}</td>
+                                        <td>{wItems.id}</td>
+
+                                        <td onClick={() => handleEdit(wItems)}>Edit</td>
+                                        <td onClick={() => deleteItem(wItems.id)}>Delete</td>
+
+
+
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
     );
