@@ -47,7 +47,7 @@ const Wishlist = () => {
         <div className='wishlistBox'>
             <h1 className='text-center'>Wishlist</h1>
 
-            <div className='card mb-8 center border-primary' style={{ maxwidth: "540px" }}>
+            <div className='card p-5 center border-primary' style={{ maxwidth: "540px" }}>
                 <div>
                     <h5 className='text-center'> The wishlist feature is a CRUD application that allows users to add any items they would like to be added to the company's e-commerce website .</h5>
                 </div>
@@ -61,7 +61,7 @@ const Wishlist = () => {
                 />
 
 
-                <table className="table info-box border border-primary rounded text-center text-black p-4 ">
+                <table className="table info-box border border-primary rounded text-center text-black p-4">
                     <thead>
                         <tr>
                             <th scope="col">Item Name</th>

@@ -40,11 +40,13 @@ const Contact = () => {
 
 
     return (
-        <div className="Contact-Container">
         <div className='contactBox'>
             <h1 className='text-center'>Help Center</h1>
+            <div className='card p-5 center border-primary' >
+                
             <h5 className='text-center'> The help center feature is a CRUD application that allows users to resolve any issues they may have encountered while using any features on the site.</h5>
-            <div className='card mb-3 center border-primary' style={{ maxwidth: "540px" }}>
+
+
                 <HelpForm
                     fetchIssues={fetchIssues}
                     editForm={editForm}
@@ -84,7 +86,7 @@ const Contact = () => {
                 </table>
             </div>
         </div>
-</div>
+
 
     );
 }
