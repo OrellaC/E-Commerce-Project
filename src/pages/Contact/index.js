@@ -73,8 +73,12 @@ const Contact = () => {
                                         <td>{hIssues.issuedescription}</td>
                                         <td>{hIssues.id}</td>
 
-                                        <td onClick={() => handleEdit(hIssues)}>Edit</td>
-                                        <td onClick={() => deleteIssue(hIssues.id)}>Delete</td>
+                                        <td onClick={() => handleEdit(hIssues)}>
+                                        <i class="bi bi-pencil-square"></i>
+                                        </td>
+                                        <td onClick={() => deleteIssue(hIssues.id)}>
+                                        <i class="bi bi-trash3-fill"></i>
+                                        </td>
 
 
 

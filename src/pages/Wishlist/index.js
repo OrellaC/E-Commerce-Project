@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import WishlistForm from '../../components/Form/wishlistform';
 import "./styles.css"
 
+
 const Wishlist = () => {
 
     const [wItems, setWItems] = useState([])
@@ -81,8 +82,12 @@ const Wishlist = () => {
                                         <td>{wItems.itemdescription}</td>
                                         <td>{wItems.id}</td>
 
-                                        <td onClick={() => handleEdit(wItems)}>Edit</td>
-                                        <td onClick={() => deleteItem(wItems.id)}>Delete</td>
+                                        <td onClick={() => handleEdit(wItems)}>
+                                        <i class="bi bi-pencil-square"></i>
+                                            </td> 
+                                        <td onClick={() => deleteItem(wItems.id)}>
+                                        <i class="bi bi-trash3-fill"></i>
+                                        </td>
 
 
 
