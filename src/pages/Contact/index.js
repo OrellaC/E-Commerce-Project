@@ -69,15 +69,15 @@ const Contact = () => {
                             hIssues.map(hIssues => {
                                 return (
                                     <tr key={hIssues.id}>
-                                        <td>{hIssues.issueType}</td>
+                                        <td>{hIssues.issuetype}</td>
                                         <td>{hIssues.issuedescription}</td>
                                         <td>{hIssues.id}</td>
 
                                         <td onClick={() => handleEdit(hIssues)}>
-                                        <i class="bi bi-pencil-square"></i>
+                                        <i className="bi bi-pencil-square"></i>
                                         </td>
                                         <td onClick={() => deleteIssue(hIssues.id)}>
-                                        <i class="bi bi-trash3-fill"></i>
+                                        <i className="bi bi-trash3-fill"></i>
                                         </td>
 
 

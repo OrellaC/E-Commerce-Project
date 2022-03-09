@@ -83,10 +83,10 @@ const Wishlist = () => {
                                         <td>{wItems.id}</td>
 
                                         <td onClick={() => handleEdit(wItems)}>
-                                        <i class="bi bi-pencil-square"></i>
+                                        <i className="bi bi-pencil-square"></i>
                                             </td> 
                                         <td onClick={() => deleteItem(wItems.id)}>
-                                        <i class="bi bi-trash3-fill"></i>
+                                        <i className="bi bi-trash3-fill"></i>
                                         </td>
 
 
