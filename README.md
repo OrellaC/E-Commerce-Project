@@ -15,7 +15,7 @@
 <p>I utilized a total of three APIs to create this site.</p> 
 <ol>
 <li>The first API utilized is <a href="https://fakestoreapi.com/">Fake Store API </a>. This API was used to render the items under the "shop" page. Users are able to add these items into their cart and then view them under the "cart" page.</li>
-<li> The second API utilized is an <a href= "https://eva.pingutil.com/">email verification API </a>. This API can be found on the "coupon" page. Its purpose is to verify the email addresses of users. The API validates whether or not a provided email address is a webmail or not. If the provided email is not a webmail then users are not able to view the coupon code until they provide a valid email.</li>
+<li> The second API utilized is an <a href= "https://eva.pingutil.com/">email verification API </a>. This API can be found on the "coupon" page. Its purpose is to verify the email addresses of users. The API validates whether or not a provided email address is a webmail or not. If the provided email is not a webmail then users are not able to view the coupon code until they provide a valid email. This is to prevent users from using temporary email sites such as https://www.mohmal.com/en</li>
 <li> The third API utilized is a <a href="https://ip-api.com/">geolocation API </a>. This API tracks the location of the current site user. Its purpose is to help business owners locate the region of their target demographic so that they are better able to create advertisements and other promotional material.</li>
 </ol>
 
